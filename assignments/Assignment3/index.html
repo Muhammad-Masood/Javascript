@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie App</title>
+    <script src="./app.js" defer></script>
+</head>
+<body>
+    <fieldset>
+        <label>
+    Year <input type="number" name="Year" id="year">
+    Genre <input type="string" id="genre">
+    Rating <select name="rating">
+        <option value="All">All</option>
+    </select>
+    <br> <br>
+    Language <input type="text" id="language">
+    <button id = "rcmd">Show Recommendations</button>
+        </label>
+    </fieldset>
+    <hr>
+    <table>
+        <tr>
+            <td>Rank</td>
+            <td style="padding-left: 50px;">Movie</td>
+            <td style="padding-left: 200px;">Year</td>
+        </tr>
+
+        <tr>
+            <tr>
+            <td id="_rank">
+            </td>
+            <td id="_movie">
+                <ul id="_movieList">
+                </ul>
+            </td>
+            <td id="_year"></td>
+        </tr>
+    </table>
+    <hr>
+</body>
+</html>
